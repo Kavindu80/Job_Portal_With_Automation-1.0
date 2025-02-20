@@ -47,7 +47,7 @@ export const updateProfile = (data) => async (dispatch) => {
   dispatch(updateProfileSlice.actions.updateProfileRequest());
   try {
     const response = await axios.put(
-      "http://44.223.250.83:4000/api/v1/user/update/profile",
+      "http://100.28.92.187:4000/api/v1/user/update/profile",
       data,
       {
         withCredentials: true,
@@ -67,7 +67,7 @@ export const updatePassword = (data) => async (dispatch) => {
   dispatch(updateProfileSlice.actions.updatePasswordRequest());
   try {
     const response = await axios.put(
-      "http://44.223.250.83:4000/api/v1/user/update/password",
+      "http://100.28.92.187:4000/api/v1/user/update/password",
       data,
       {
         withCredentials: true,
